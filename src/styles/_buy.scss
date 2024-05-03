@@ -1,0 +1,76 @@
+.buy {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    max-width: 500px;
+    gap: 50px;
+    width: 100%;
+    margin: 0 auto;
+
+    div {
+        background-color: gray;
+        border-radius: 20px;
+        padding: 30px;
+        text-align: center;
+    }
+
+    &__title {
+        color: white;
+        font-weight: bold;
+        line-height: 23px;
+        display: block;
+        padding-bottom: 35px;
+    }
+
+    &__link {
+        padding: 15px;
+        text-decoration: none;
+        background-color: white;
+        color: black;
+        font-size: 17px;
+        border-radius: 20px;
+    }
+
+    @media (max-width: 1024px) {
+        &__title {
+            font-size: 33px;
+            line-height: 1.5em;
+        }
+
+        &__link {
+            font-size: 32px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        &__title {
+            font-size: 25px;
+            line-height: 1.5em;
+        }
+
+        &__link {
+            font-size: 22px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+
+        div {
+            max-width: 180px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+
+        &__title {
+            background-color: gray;
+            font-size: 19px;
+            line-height: 1.5em;
+        }
+
+        &__link {
+            font-size: 18px;
+        }
+    }
+
+}
